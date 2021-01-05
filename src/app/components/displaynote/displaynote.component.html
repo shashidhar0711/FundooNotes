@@ -1,0 +1,31 @@
+<div>
+    <div class="mar">
+        <div  [ngClass]="ListClass">
+          <mat-card *ngFor="let card of AllNotes" class="main-card" [style.background-color]=card.color
+            fxLayout.xs="column" fxFlex.xs="95">
+            <div>
+              <div fxLayout="row">
+                <div fxFlex="90" (click)="openDialog(card)">
+                  <p class="wordBreakTitle">{{card.title}}</p>
+                </div>
+                <div fxFlex="10" fxLayoutAlign="start start" class="div">
+                  <button mat-icon-button matSuffix (click)="pinNote(card)" (click)="pin()" *ngIf="!isTrash"
+                    matTooltip="unPin Note">
+                    <!-- <img src="../../../assets/image/unpin.svg"> -->
+                  </button>
+                </div>
+              </div>
+              <div (click)="openDialog(card)">
+  
+                <p class="wordBreak">{{card.description}}</p>
+              </div>
+            </div>
+            <div fxLayout="row" fxLayout="row wrap">
+            </div>
+            <div style="height:2vh;"></div>
+            <div class="div">
+              <app-icon [note]="card"></app-icon>
+            </div>
+          </mat-card>
+    </div>
+</div>

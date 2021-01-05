@@ -1,0 +1,182 @@
+.padd {
+    background-color: rgb(204, 255, 144);
+    padding-left: 2px;
+  }
+  ::ng-deep .mat-standard-chip.mat-chip-with-trailing-icon {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-right: 8px;
+      padding-left: 12px;
+  }
+  .mar {
+    margin-left: 17%;
+  }
+  @media screen and (max-width: 700px) {
+    .mar {
+      margin-left: 6%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .mar {
+      margin-left: 3%;
+    }
+  }
+  
+  ::ng-deep .mat-card {
+    margin-top: 10px;
+  }
+  .div {
+    // background-color: yellow;
+    // padding: 20px;
+    // display: none;
+    visibility: hidden;
+  }
+  .hid {
+    // background-color: yellow;
+    // padding: 20px;
+    // display: none;
+    visibility: hidden;
+  }
+  .main-card:hover .div {
+    // display: block;
+    visibility: visible;
+  }
+  .flexcontainer {
+    flex-flow: column wrap;
+  }
+  .label {
+    text-overflow: clip;
+  }
+  .XPtOyb-fmcmS {
+    border: 1px solid transparent;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 12px;
+  }
+  .nameIcon {
+    font-size: 20px;
+    padding-left: 10px;
+    color: white;
+    padding-top: 11px;
+  }
+  .i {
+    margin-left: 0px;
+  }
+  p {
+    display: block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.4em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .noteReminder {
+    font-size: 13px;
+    line-height: 40px;
+    font-family: "Roboto", arial, sans-serif;
+    color: #202124;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+  }
+  .collo {
+    margin-right: 0px;
+    margin-top: -100px;
+    // margin-bottom: 50px;
+    // position: relative;
+    font-size: 15px;
+    font-style: inherit
+  }
+  ::ng-deep .mat-mini-fab {
+    height: 30px;
+    // text-align: center;
+    width: 30px;
+  }
+  #label {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+  .mat {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 8px;
+    padding-left: 1px;
+  }
+  ::ng-deep .mat-standard-chip .mat-chip-remove, .mat-standard-chip .mat-chip-trailing-icon {
+    margin-left: 0px;
+    margin-right: 0;
+  }
+  ::ng-deep .mat-mini-fab .mat-button-wrapper {
+    padding: 8px 0;
+    display: inline-block;
+    line-height: 1px;
+  }
+  .listView {
+    // border-radius: 15px;
+    // border-radius: 20%;
+    width: 100%;
+  }
+  .gridView {
+    // display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    width: 100%;
+    .main-card {
+      width: 240px;
+    }
+  }
+  .wordBreak {
+    word-break: break-all;  
+    display: block; /* or inline-block */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 15.5em;
+  }
+  .wordBreakTitle {
+    word-break: break-all;
+    letter-spacing: 0.00625em;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    // line-height: 1.5rem;
+    display: block; /* or inline-block */
+    text-overflow: ellipsis;
+    //  overflow: hidden;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+  }
+  .fontpixel {
+    max-height: 50px;
+  }
+  .main-card {
+    width: 240px;
+    min-height: 20px;
+    // max-height: 400px;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    // border-radius: 10px;
+    overflow: hidden;
+  }
+  .firstDiv {
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width: 600px) {
+    .main-card {
+      width: 600px;
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }

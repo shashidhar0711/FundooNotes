@@ -1,0 +1,35 @@
+.nop {
+    text-decoration: none;
+  }
+  .takeNote:hover {
+    box-shadow: 0 0 11px rgb(119, 118, 118);
+  }
+  .view1:hover {
+    box-shadow: 0 0 11px rgb(119, 118, 118);
+  }
+  .view1{
+      transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+      display: block;
+      position: relative;
+      padding: 9px;
+      border-radius: 10px;
+  }
+  ::ng-deep .mat-card {
+    width: 14cm;
+    border-radius: 10px;
+  }
+  .XPtOyb-fmcmS {
+    border: 1px solid transparent;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 12px;
+  }
+  ::ng-deep .mat-standard-chip {
+    transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    display: inline-flex;
+    border-radius: 16px;
+    align-items: center;
+    cursor: default;
+    min-height: 32px;
+    height: 1px;
+  }

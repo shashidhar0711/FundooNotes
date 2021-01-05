@@ -1,0 +1,29 @@
+<div fxLayout="row" fxLayoutAlign="center center" [style.background-color]=color class="mainDialog">
+    <mat-card [style.background-color]=color class="takeNote" fxLayout='column' fxFlex.xs='98' fxFlex='100'>
+        <div fxLayout="row">
+        <div fxFlex="95">
+          <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="auto"
+            cdkAutosizeMinColumns="50" cdkAutosizeMaxRows="5" placeholder="Title" [(ngModel)]="title"></textarea>
+        </div>
+        <div fxFlex="5">
+          <button mat-icon-button matSuffix matTooltip="pin">
+            <img *ngIf="pin === true" src="../../../assets/image/unpin.svg">
+            <img *ngIf="pin === false" src="../../../assets/image/pin.svg">
+          </button>
+        </div>
+      </div>  
+      <div fxFlex="100" style="width: 500px">
+        <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="auto"
+          cdkAutosizeMinColumns="50" cdkAutosizeMaxRows="15" placeholder="Take a Note"
+          [(ngModel)]="description"></textarea>
+      </div>
+      <div fxLayout="row" fxFlex="100" fxLayoutAlign="space-between center">
+        <div fxFlex="60">
+          <app-icon></app-icon>
+        </div>
+        <div>
+          <button mat-icon-button matSuffix (click)='updateNote(data)'>close</button>
+        </div>
+      </div>
+    </mat-card>
+</div>
